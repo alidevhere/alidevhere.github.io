@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mohammad ALi Ashraf's Website</title>
+<title>Mohammad ALi</title>
 </head>
 <body>
-<h1>My own Web</h1>
-<p>Mohammad Ali Ashraf here !! Website under construction</p>
+<h1>Coming Soon</h1>
+<p>Hello World !!</p>
 </body>
 </html>
