@@ -6,8 +6,18 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-  console.log('i m clicked');
-  
+/// write to file
+var txtFile = "data.txt";
+var file = new File(txtFile);
+var str = "HELLOOO HERE";
+
+file.open("w"); // open file with write access
+file.writeln("Second line of text " + str);
+file.write(str);
+file.close();
+  console.log('written successfully !!!');
+    
+    
   });
 });
 </script>
