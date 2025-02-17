@@ -526,3 +526,11 @@ Certifications Slider
         min-width: 250px;
     }
 }
+
+/* Certifications Slider END */
+
+/* */
+.btn svg {
+    margin-right: 1px;
+    vertical-align: middle;
+}
