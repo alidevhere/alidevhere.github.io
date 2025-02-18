@@ -546,3 +546,102 @@ Certifications Slider
     margin-right: 1px;
     vertical-align: middle;
 }
+
+/* Experience Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--primary);
+}
+
+.timeline-content {
+    position: relative;
+    width: calc(50% - 40px);
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: calc(50% + 40px);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 0;
+}
+
+.timeline-date {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+    color: var(--secondary);
+    margin-bottom: 4px;
+}
+
+.timeline-content h4 {
+    color: var(--text);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.timeline-content ul {
+    list-style-position: inside;
+    color: var(--text);
+}
+
+.timeline-content li {
+    margin-bottom: 8px;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 32px;
+    }
+
+    .timeline-dot {
+        left: 32px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 84px);
+        margin-left: 84px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+        left: 0;
+    }
+}
