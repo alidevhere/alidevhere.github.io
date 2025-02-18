@@ -645,3 +645,15 @@ Certifications Slider
         left: 0;
     }
 }
+
+.experience-summary {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.experience-summary span {
+    color: var(--primary);
+    font-weight: 600;
+}
