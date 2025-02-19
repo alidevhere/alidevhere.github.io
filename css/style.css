@@ -657,3 +657,16 @@ Certifications Slider
     color: var(--primary);
     font-weight: 600;
 }
+
+.repo-description {
+    margin: 1rem 0;
+}
+
+.repo-description p {
+    margin: 0.5rem 0;
+}
+
+.contribution-details {
+    font-size: 0.9rem;
+    color: #666;
+}
